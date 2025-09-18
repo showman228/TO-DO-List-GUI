@@ -4,7 +4,7 @@
 #include <QAbstractListModel>
 #include <QStringList>
 #include <QString>
-
+#include "taskmanager.h"
 
 class to_do_model : public QAbstractListModel
 {

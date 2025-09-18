@@ -1,4 +1,4 @@
-#include "task.h"
+#include "HeaderFiles/task.h"
 #include <QString>
 
 Task::Task(const QString& nameTask, const QString& description , bool isCompleted){

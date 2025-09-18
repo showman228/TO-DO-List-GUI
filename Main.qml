@@ -22,6 +22,20 @@ Window {
         anchors.leftMargin: 400
         anchors.left: parent.left
 
+        AnimatedImage {
+            id: animation
+            source: "images/pudge-dota.gif"
+            width: 50
+            height: 50
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+
+            anchors.bottomMargin: 10
+            anchors.rightMargin: 10
+
+            opacity: 0.5
+        }
+
         Rectangle {
             id: managerTasks
             width: 520
@@ -34,7 +48,7 @@ Window {
             border.width: 1
 
             Text {
-                text: "ДОБРО ПОЖАЛОВАТЬ В TO-DO LIST"
+                text: "ДОБРО ПОЖАЛОВАТЬ В TO-DO List!"
                 color: "#B9B9C7" // Светло-серый
                 anchors.centerIn: parent
                 font.pointSize: 18
@@ -87,16 +101,6 @@ Window {
         border.width: 1
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
-
-        AnimatedImage {
-            id: animation
-            source: "images/pudge-dota.gif"
-            width: 300
-            height: 150
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottomMargin: 70
-            anchors.bottom: parent.bottom
-        }
 
         Rectangle {
             id: urlLink
@@ -176,7 +180,7 @@ Window {
                     font: parent.font
                     color: "#F8F9FA"
                     horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
+                     verticalAlignment: Text.AlignVCenter
                 }
             }
 

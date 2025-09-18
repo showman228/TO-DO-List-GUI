@@ -10,6 +10,7 @@ qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(appTO_DO_ListGUI
     main.cpp
+        HeaderFiles/to_do_model.h
 )
 
 qt_add_qml_module(appTO_DO_ListGUI
@@ -19,16 +20,13 @@ qt_add_qml_module(appTO_DO_ListGUI
         Main.qml
         SOURCES
         SOURCES
-        SOURCES task.h task.cpp
-        SOURCES taskmanager.h taskmanager.cpp
+        SOURCES HeaderFiles/task.h task.cpp
+        SOURCES HeaderFiles/taskmanager.h taskmanager.cpp
         SOURCES
         RESOURCES
         RESOURCES images/pudge-dota.gif
 )
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
 set_target_properties(appTO_DO_ListGUI PROPERTIES
 #    MACOSX_BUNDLE_GUI_IDENTIFIER com.example.appTO_DO_ListGUI
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
