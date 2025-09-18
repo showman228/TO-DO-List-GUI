@@ -14,6 +14,7 @@ Window {
     maximumWidth: width
     maximumHeight: height
 
+    // правая область окна
     Rectangle {
         id: mainREC
         color: "#212126" // Глубокий тёмно-серый
@@ -22,6 +23,7 @@ Window {
         anchors.leftMargin: 400
         anchors.left: parent.left
 
+        // пудж
         AnimatedImage {
             id: animation
             source: "images/pudge-dota.gif"
@@ -36,6 +38,21 @@ Window {
             opacity: 0.5
         }
 
+        // поле для ввода
+        Column{
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 60
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            padding: 10
+            TextArea {
+                width: 400
+                height: 400
+                text: "Введите что-нибудь"
+            }
+        }
+
+        // прямоугольник с надписью "ДОБРО ПОЖАЛОВАТЬ В TO-DO List!"
         Rectangle {
             id: managerTasks
             width: 520
@@ -55,6 +72,7 @@ Window {
             }
         }
 
+        // Строка с надписью "Ваш список задач"
         Rectangle {
             color: "#212126"
             width: 200
@@ -73,6 +91,7 @@ Window {
             }
         }
 
+        // Строка с надписью "Кол-во задач: N"
         Rectangle {
             color: "#212126"
             width: 200
@@ -92,6 +111,7 @@ Window {
         }
     }
 
+    // Левая колонка с кнопками
     Rectangle {
         id: leftRectangle
         width: 400
@@ -102,6 +122,7 @@ Window {
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
 
+        // Ссылка
         Rectangle {
             id: urlLink
             color: "#2B2B31"
@@ -123,6 +144,7 @@ Window {
             }
         }
 
+        // Прямоугольник с надписью "Меню"
         Rectangle {
             id: myMenu
             width: 320
@@ -143,6 +165,7 @@ Window {
             }
         }
 
+        // Колонка с кнопками
         Column {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
