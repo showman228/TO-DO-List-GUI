@@ -135,7 +135,7 @@ Window {
             Text {
                 anchors.centerIn: parent
                 textFormat: Text.RichText
-                text: "<a href=\"https://t.me/showman_69\">Тг разраба</a>"
+                text: "<a href=\"https://t.me/zo1dan\">Тг разраба</a>"
                 color: "#7A78FF" // Фиолетово-синий
                 font.pointSize: 18
                 onLinkActivated: (link) => {
